@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/ceotcr/frontend-mentee](https://github.com/ceotcr/frontend-mentee)
+- Solution URL: [https://github.com/ceotcr/frontend-mentee/tree/main/newsletter-signup](https://github.com/ceotcr/frontend-mentee/tree/main/newsletter-signup)
 - Live Site URL: [https://ceotcr.github.io/frontend-mentee/newsletter-signup](https://ceotcr.github.io/frontend-mentee/newsletter-signup)
 
 ### Built with
