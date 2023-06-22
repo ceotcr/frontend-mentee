@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Roboto-Bold, sans-serif;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Reg, sans-serif;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Roboto-Reg', sans-serif;
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+    --Tomato-error: #FFE8E6;
+}
+
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    background: #000;
+    color: var(--Charcoal-Grey);
+    background: var(--Dark-Slate-Grey);
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.head,
+.subhead {
+    font-family: Roboto-Bold, sans-serif;
+    color: var(--Dark-Slate-Grey);
+}
+
+.head {
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+}
+
+ul.flex {
+    list-style: none;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.container {
+    flex-direction: row;
+    padding: min(2rem, 5vw);
+    gap: min(2rem, 5vw);
+    max-width: min(90%, 1200px);
+    line-height: 1.25;
+    background: white;
+    border-radius: 2rem;
+    margin: min(2rem, 5vw);
+}
+
+.form-container {
+    flex-direction: column;
+    gap: min(2rem, 5vw);
+    padding: 1rem;
+}
+
+.form-element {
+    gap: 0.5rem;
+}
+
+.labels {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#invalid-mail {
+    color: var(--Tomato);
+    display: none;
+}
+
+label {
+    color: var(--Dark-Slate-Grey);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input {
+    padding: min(1rem, 5vw) min(2rem, 5vw);
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    border: 1.5px solid var(--Grey);
+    outline: none;
+}
+
+
+.btn {
+    background: var(--Dark-Slate-Grey);
+    color: white;
+    font-family: "Roboto-Bold", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+    border: none;
+    margin-top: min(2rem, 5vw);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: background 0.3s ease-out;
+    padding: min(1rem, 5vw) min(2rem, 5vw);
+}
+
+.btn:hover {
+    background: linear-gradient(-45deg, var(--Tomato), #FF527B);
+}
+
+input:focus {
+    border: 1.5px solid var(--Dark-Slate-Grey);
+}
+
+.signup-form-img {
+    max-height: 512px;
+    width: 100%;
+    max-width: 380px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 2rem;
+}
+
+#success {
+    max-width: 420px;
+    background: white;
+    padding: min(2rem, 5vw);
+    border-radius: min(2rem, 5vw);
+    display: none;
+}
+
+#success img {
+    width: 44px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin: 1rem;
+}
+
+.attribution a {
+    color: hsl(110, 100%, 73%);
+}
+
+.attribution a:hover {
+    color: hsl(111, 100%, 86%);
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        flex-direction: column-reverse;
+        gap: min(2rem, 5vw);
+        line-height: 1.25;
+        background: white;
+        border-radius: 2rem;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .form-container {
+        gap: min(2rem, 5vw);
+        padding: 1rem;
+        padding: calc(min(2rem,
+                    5vw) + 1rem);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .signup-form-img {
+        min-height: 300px;
+        height: 48vh;
+        max-height: 512px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        justify-content: flex-start !important;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .signup-form-img {
+        border-radius: 0;
+    }
+
+    .form-container {
+        gap: min(2rem, 5vw);
+        padding: min(2rem,
+                5vw);
+    }
+
+    #success {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+        min-height: 88vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #success .content {
+        max-width: 100%;
+        margin: auto 0;
+    }
+
+    .attribution {
+        height: 5vh;
+    }
+
+}
