@@ -1,6 +1,6 @@
 const sigupImg = document.querySelector(".signup-form-img");
 window.onresize = () => {
-    window.visualViewport.width > 900 ? sigupImg.src = "./assets/images/illustration-sign-up-desktop.svg" : sigupImg.src = "./assets/images/illustration-sign-up-mobile.svg"
+    window.visualViewport.width >= 900 ? sigupImg.src = "./assets/images/illustration-sign-up-desktop.svg" : sigupImg.src = "./assets/images/illustration-sign-up-mobile.svg"
 }
 
 const form = document.querySelector('#signup-form')

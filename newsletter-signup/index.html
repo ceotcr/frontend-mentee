@@ -4,67 +4,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Frontend Mentor | Newsletter sign-up form" />
+  <meta property="og:description" content="Sign up form challenge by Frontend Mentor" />
+  <meta property="og:image" content="./assets/images/desktop-preview.png" />
+  <meta property="description" content="Sign up form challenge by Frontend Mentor" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <link rel="stylesheet" href="./styles/main.css" />
   <title>Frontend Mentor | Newsletter sign-up form</title>
 </head>
 
 <body class="flex center">
-  <div id="main-form-container" class="container flex center">
-    <div class="form-container flex">
-      <h1 class="head">Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul class="flex">
-        <li class="list-item flex">
-          <img src="./assets/images/icon-list.svg" alt="" />
-          <span class="list-item-text">
-            Product discovery and building what matters
-          </span>
-        </li>
-        <li class="list-item flex">
-          <img src="./assets/images/icon-list.svg" alt="" />
-          <span class="list-item-text">
-            Measuring to ensure updates are a success
-          </span>
-        </li>
-        <li class="list-item flex">
-          <img src="./assets/images/icon-list.svg" alt="" />
-          <span class="list-item-text">
-            And much more!
-          </span>
-        </li>
-      </ul>
+  <main class="flex center column">
+    <section id="main-form-container" class="container flex center">
+      <div class="form-container flex">
+        <h1 class="head">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="flex">
+          <li class="list-item flex">
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <span class="list-item-text">
+              Product discovery and building what matters
+            </span>
+          </li>
+          <li class="list-item flex">
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <span class="list-item-text">
+              Measuring to ensure updates are a success
+            </span>
+          </li>
+          <li class="list-item flex">
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <span class="list-item-text">
+              And much more!
+            </span>
+          </li>
+        </ul>
 
-      <form id="signup-form" class="flex column">
-        <div class="form-element flex column">
-          <div class="labels flex">
-            <label for="email">Email address</label>
-            <label for="email" id="invalid-mail">Valid Email Required</label>
+        <form id="signup-form" class="flex column">
+          <div class="form-element flex column">
+            <div class="labels flex">
+              <label for="email">Email address</label>
+              <label for="email" id="invalid-mail">Valid Email Required</label>
+            </div>
+            <input name="email" id="email" type="text" placeholder="email@company.com" autocomplete="email">
           </div>
-          <input name="email" id="email" type="text" placeholder="email@company.com" autocomplete="email">
-        </div>
-        <input class="btn" type="submit" value="Subscribe to monthly newsletter">
-      </form>
-    </div>
-    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Signup Illustration" class="signup-form-img">
-  </div>
+          <input class="btn" type="submit" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Signup Illustration" class="signup-form-img">
+    </section>
 
-  <div id="success" class="flex column">
-    <div class="flex column content"><img src="./assets/images/icon-success.svg" alt="success">
-      <h1 class="head">Thanks for subscribing!</h1>
-      <p>A confirmation email has been sent to
-        <strong id="usermail">ash@loremcompany.com</strong>. Please open it and click the button inside to confirm
-        your subscription.
-      </p>
+    <div id="success" class="flex column">
+      <div class="flex column content"><img src="./assets/images/icon-success.svg" alt="success">
+        <h1 class="head">Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to
+          <strong id="usermail">ash@loremcompany.com</strong>. Please open it and click the button inside to confirm
+          your subscription.
+        </p>
+      </div>
+      <button class="btn dismiss-msg">Dismiss message</button>
     </div>
-    <button class="btn dismiss-msg">Dismiss message</button>
-  </div>
-
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-    <a href="https://linkedin.com/in/thechetanraje" target="_blank">Chetan Sapkal</a>.
-  </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://linkedin.com/in/thechetanraje" target="_blank">Chetan Sapkal</a>.
+    </div>
+  </footer>
   <script src="./scripts/main.js"></script>
 </body>
 

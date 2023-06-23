@@ -32,6 +32,11 @@ body {
     color: var(--Charcoal-Grey);
     background: var(--Dark-Slate-Grey);
     overflow-x: hidden;
+    width: 100%;
+}
+
+main {
+    width: 100%;
 }
 
 .flex {
@@ -50,7 +55,7 @@ body {
 
 .head,
 .subhead {
-    font-family: Roboto-Bold, sans-serif;
+    font-family: "Roboto-Bold", sans-serif;
     color: var(--Dark-Slate-Grey);
 }
 
